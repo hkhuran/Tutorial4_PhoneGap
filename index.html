@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Credit card validator</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script> -->
+	<script type="text/javascript" src="creditCard.js"></script>
+</head> 
+<body> 
+
+<div data-role="page">
+	<div data-role="header">
+		<h1>Tutorial 4</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" align="center">
+		<h3><p>Please enter your credit card number below</p></h3>
+		<form id="credit-card-entry-form" method="POST">
+		<div class="ui-field-contain">
+        <input type="text" name="credit-card-number" placeholder="Credit card number format - 1234123412341234" required/>
+      </div>
+      <input type="submit" data-inline="true" value="Submit" align="center">
+    </form>
+	<div id="type"></div>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+</body>
+</html>
